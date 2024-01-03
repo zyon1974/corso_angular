@@ -1,12 +1,13 @@
-<label>{{ serverName }}</label>
-<input
-    type="text"
-    class="form-control"
-    (input)="onUpdateServerName($event)">
+<label>{{ serverName }}
+    <input
+        type="text"
+        class="form-control"
+        (input)="onUpdateServerName($event)">
 
-<button class="btn btn-primary" 
-    [disabled]="!allowNewServer"
-    (click)="onCreateServer()">add server</button>
+    <button class="btn btn-primary" 
+        [disabled]="!allowNewServer"
+        (click)="onCreateServer()">add server</button>
+</label>
 
 <p>{{ allowNewServer }}</p>
 <p [innerText]="allowNewServer"></p>
@@ -17,18 +18,19 @@
     <app-server *ngFor="let server of servers; let i = index"></app-server>
 <hr>
 
-<input
-    type="text"
-    class="form-control"
-    [(ngModel)]="username">
-    <p>{{ username }}</p>
+<label>Etichetta richiesta
+    <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="username">
+        <p>{{ username }}</p>
 
-<!-- bottone non attivo se "username" vuoto, onclick cancella contenuto username -->
-<button 
-    class="btn btn-danger" 
-    [disabled]="username === ''"
-    (click)="username = ''">Reset user</button>  
-
+    <!-- bottone non attivo se "username" vuoto, onclick cancella contenuto username -->
+    <button 
+        class="btn btn-danger" 
+        [disabled]="username === ''"
+        (click)="username = ''">Reset user</button>  
+</label>
 <hr>
 
 <div>

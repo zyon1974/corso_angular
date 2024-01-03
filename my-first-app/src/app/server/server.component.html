@@ -1,0 +1,5 @@
+<div 
+    [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{biancoTesto: serverStatus === 'online'}"> <!-- 'biancoTest' si applica a condizione che 'serverStatus' sia 'online' -->
+    {{ 'Server' }} id: <b>{{ serverId }}</b> is <b>{{ serverStatus }}</b> and it's <b>{{ getServerColor() }}</b>
+</div>

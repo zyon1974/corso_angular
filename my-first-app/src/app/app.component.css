@@ -1,0 +1,8 @@
+h1 {
+    color: rgb(35, 23, 23);
+}
+
+div {
+    background-color: rgb(241, 239, 243) !important;
+    border: 3px solid rgb(56, 55, 53) !important;
+}

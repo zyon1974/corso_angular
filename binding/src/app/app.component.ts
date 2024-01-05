@@ -14,7 +14,7 @@ export class AppComponent {
   persone = [
     {nome: 'catello', cognome: 'cuccurullo', color: 'red'},
     {nome: 'crotino', cognome: 'caccavaci', color: 'blue'},
-    {nome: 'jonny', cognome: 'crodino', color: 'green'},
+    {nome: 'Frengo', cognome: 'crodino', color: 'green'},
     {nome: 'fred', cognome: 'bongusto', color: 'violet'},
     {nome: 'ralph', cognome: 'rogerside', color: 'purple'}
   ];

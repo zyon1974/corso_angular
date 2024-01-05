@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class NewsComponent {
   @Input() data: any;
+  @Input() title: string;
 
   constructor() {}
 }

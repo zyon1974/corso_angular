@@ -15,6 +15,7 @@ export class ServersComponent {
   username = '';
   serverCreated = false;
   servers = ['Test Server 1', 'Test server 2'];
+  //servers = [];
 
   constructor() {
     setTimeout(() => {

@@ -2,6 +2,6 @@
   <h1>BINDING TEST {{ title }}</h1>
   <hr>
   <!-- <p>{{ persone[0].nome }} </p> -->
-
-  <app-news [data]="persone" [title]="title"></app-news>
+  Messaggio: {{ message }}
+  <app-news [data]="persone" [title]="title" (messageEvent)="receiveMessage($event)"></app-news>
 </div>

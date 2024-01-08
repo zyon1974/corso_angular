@@ -1,15 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  //encapsulation: ViewEncapsulation.None // elimina encapsulation
 })
 export class AppComponent {
 
   title = 'CORSO ANGULAR';
 
-  // elementi = ['cane','gatto'];
+  elementi = ['cane','gatto'];
 
   persone = [
     {nome: 'catello', cognome: 'cuccurullo', color: 'red'},
@@ -19,7 +20,12 @@ export class AppComponent {
     {nome: 'ralph', cognome: 'rogerside', color: 'purple'}
   ];
 
-  // constructor() {
-  //   console.log(typeof this.elementi);
-  // }
+  constructor() {
+     console.log(typeof this.elementi);
+  }
+  message = "catello go!";
+
+  receiveMessage($event) {
+    this.message = $event;
+  }
 }
